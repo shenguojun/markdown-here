@@ -22,7 +22,8 @@ var DEFAULTS = {
   'hotkey': { shiftKey: false, ctrlKey: true, altKey: true, key: 'M' },
   'forgot-to-render-check-enabled': false,
   'header-anchors-enabled': false,
-  'gfm-line-breaks-enabled': true
+  'gfm-line-breaks-enabled': true,
+  'highlight-line-breaks-enabled': false
 };
 
 /*? if(platform!=='thunderbird'){ */
@@ -129,7 +130,8 @@ var ChromeOptionsStore = {
     'hotkey': DEFAULTS['hotkey'],
     'forgot-to-render-check-enabled': DEFAULTS['forgot-to-render-check-enabled'],
     'header-anchors-enabled': DEFAULTS['header-anchors-enabled'],
-    'gfm-line-breaks-enabled': DEFAULTS['gfm-line-breaks-enabled']
+    'gfm-line-breaks-enabled': DEFAULTS['gfm-line-breaks-enabled'],
+    'highlight-line-breaks-enabled': DEFAULTS['highlight-line-breaks-enabled']
   },
 
   // Stored string pieces look like: {'key##0': 'the quick ', 'key##1': 'brown fox'}
@@ -293,7 +295,8 @@ var MozillaOptionsStore = {
     'hotkey': DEFAULTS['hotkey'],
     'forgot-to-render-check-enabled': DEFAULTS['forgot-to-render-check-enabled'],
     'header-anchors-enabled': DEFAULTS['header-anchors-enabled'],
-    'gfm-line-breaks-enabled': DEFAULTS['gfm-line-breaks-enabled']
+    'gfm-line-breaks-enabled': DEFAULTS['gfm-line-breaks-enabled'],
+    'highlight-line-breaks-enabled': DEFAULTS['highlight-line-breaks-enabled']
   },
 
   // This is called both from content and background scripts, and we need vastly
@@ -468,7 +471,8 @@ var SafariOptionsStore = {
     'hotkey': DEFAULTS['hotkey'],
     'forgot-to-render-check-enabled': DEFAULTS['forgot-to-render-check-enabled'],
     'header-anchors-enabled': DEFAULTS['header-anchors-enabled'],
-    'gfm-line-breaks-enabled': DEFAULTS['gfm-line-breaks-enabled']
+    'gfm-line-breaks-enabled': DEFAULTS['gfm-line-breaks-enabled'],
+    'highlight-line-breaks-enabled': DEFAULTS['highlight-line-breaks-enabled']
   }
 };
 /*? } */

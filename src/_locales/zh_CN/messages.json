@@ -338,5 +338,9 @@
   "options_page__gfm_line_breaks_enabled_label":{
     "message":"<b>启用GFM换行。<\/b>",
     "description":"Label for the checkbox that enables the support of 'Github-flavored Markdown' line breaks."
+  },
+  "options_page__highlight_line_breaks_enabled_label":{
+    "message":"<b>代码高亮中使用br换行标签<\/b>",
+    "description":"Use the br tags in script display"
   }
 }
